@@ -42,7 +42,7 @@
 
     </div>
     <div class="fancy-overlay" style="display: none">
-        <div class="pop-box">
+        <div class="pop-box" style="padding-top:100px">
             <div><img src="images/red-bag/gx.png"></div>
             <h5>获得5金币</h5>
             <button class="btn">再抽一次</button>
@@ -57,11 +57,13 @@
     $(document).ready(function () {
         var w = $(window).width();
         var h = $(window).height();
+
+
         $('.dd').hide();
         setTimeout(function () { $('.dd').show(); }, 1000);
         $('.dd').jqFloat({
-            width: w,
-            height: h,
+            width: w-200,
+            height: h-200,
             speed: 7000,
             minHeight: 50
         });
@@ -113,7 +115,7 @@
                 'left': -1500,
                 'top': 100
             },
-                8000, function () {
+                15000, function () {
                     $('.fly_1').remove();
                 });
 
@@ -121,7 +123,7 @@
 
         };
         bb();
-        var hh = setInterval(bb, 8100);
+        var hh = setInterval(bb, 15100);
 
 
 
